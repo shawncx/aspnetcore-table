@@ -61,8 +61,7 @@ namespace aspnetcore_table
 
         private static CosmosDbService InitializeCosmosClientInstance()
         {
-            string connectionString = "DefaultEndpointsProtocol=https;AccountName=servicelinker-table-cosmos;AccountKey=PTrScB4LHEXPhKpljggm5wVIU2ANYRRXhynZMgZflPIaKFYiPOPzd1sTfVp8IOCZT76l2CJuiJSuulExNm0v9Q==;TableEndpoint=https://servicelinker-table-cosmos.table.cosmos.azure.com:443/;";
-            //string connectionString = Environment.GetEnvironmentVariable("RESOURCECONNECTOR_MYCONN_CONNSTR");
+            string connectionString = Environment.GetEnvironmentVariable("RESOURCECONNECTOR_MYCONN_CONNSTR");
 
 
             CosmosDbService cosmosDbService = new CosmosDbService(connectionString);
