@@ -61,8 +61,7 @@ namespace aspnetcore_table
 
         private static CosmosDbService InitializeCosmosClientInstance()
         {
-            string connectionString = Environment.GetEnvironmentVariable("RESOURCECONNECTOR_MYCONN_CONNSTR");
-
+            string connectionString = Environment.GetEnvironmentVariable("RESOURCECONNECTOR_TESTTABLESECRETCONNECTIONSUCCEEDED_CONNECTIONSTRING");
 
             CosmosDbService cosmosDbService = new CosmosDbService(connectionString);
             //MyItem item = new MyItem()
